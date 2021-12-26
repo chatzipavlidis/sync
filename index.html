@@ -254,7 +254,8 @@
             <div class="col-lg-6">
                 <!-- Privacy Form -->
             <div class="form-container ml-4 my-auto">
-                <form id="privacyForm2" data-netlify-recaptcha="true" name="contactForm" method="POST" data-netlify="true" action="/index.html" data-toggle="validator" data-focus="false">
+                <form id="privacyForm2" data-netlify-recaptcha="true" name="contactForm" method="POST" data-netlify="true" action="/" data-toggle="validator" data-focus="false">
+                    <input type="hidden" name="form-name" value="contactForm">
                     <div class="form-group">
                         <input type="text" name="form-name" class="form-control-input" id="pname" required>
                         <label class="label-control" for="pname">Ονομα</label>
