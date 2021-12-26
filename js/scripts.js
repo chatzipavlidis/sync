@@ -202,9 +202,10 @@
             pformError();
             psubmitMSG(false, "Please fill all fields!");
         } else {
+            alert('hello')
             // everything looks good!
             event.preventDefault();
-            psubmitForm();
+            //psubmitForm();
         }
     });
 
@@ -215,7 +216,7 @@
         var select = $("#pselect").val();
         var terms = $("#pterms").val();
         
-        $.ajax({
+        $.ajax({ 
             type: "POST",
             url: "php/privacyform-process.php",
             data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 

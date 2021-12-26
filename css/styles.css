@@ -108,11 +108,18 @@ h6 {
 	margin-bottom: 0.625rem;
 }
 
-a {
-	color: #555;
+a:not(.navbar-brand){
+	color: #fff;
 	text-decoration: underline;
 }
-
+#privac{
+	background-color: #333;
+	color: #fff;
+}
+#privac:hover{
+	color: #333;
+	background-color: rgba(255, 255, 255, 0);
+}
 a:hover {
 	color: #555;
 	text-decoration: underline;
@@ -355,10 +362,16 @@ input[type='checkbox'] {
 	vertical-align: -10%;
 	margin-right: 0.5rem;
 }
-
+textarea{
+	vertical-align: -10%;
+	margin-right: 0.5rem;
+}
 /* IE10+ hack to raise checkbox field position compared to the rest of the browsers */
 @media screen and (-ms-high-contrast: active), screen and (-ms-high-contrast: none) {  
 	input[type='checkbox'] {
+		vertical-align: -9%;
+	}
+	textarea{
 		vertical-align: -9%;
 	}
 }
@@ -639,6 +652,8 @@ input[type='checkbox'] {
 .navbar-custom .navbar-brand.logo-image img {
     width: 6.6875rem;
 	height: 2.25rem;
+	margin-top: -2%;
+	margin-right: -15%;
 }
 
 .navbar-custom .navbar-brand.logo-text {
@@ -831,6 +846,12 @@ input[type='checkbox'] {
 	background-color: #ebe7fa;
 }
 
+.cards-1 .card-image .fab {
+	color: #aa7eec;
+	font-size: 3.25rem;
+	line-height: 7.5rem;
+}
+
 .cards-1 .card-image .fas {
 	color: #aa7eec;
 	font-size: 3.25rem;
@@ -844,7 +865,9 @@ input[type='checkbox'] {
 .cards-1 .card-image.green .fas {
 	color: #19ca94;
 }
-
+.cards-1 .card-image.green .fab {
+	color: #19ca94;
+}
 .cards-1 .card-image.red {
 	background-color: #f8e5ea;
 }
@@ -852,7 +875,9 @@ input[type='checkbox'] {
 .cards-1 .card-image.red .fas {
 	color: #ff556e;
 }
-
+.cards-1 .card-image.red .fab {
+	color: #ff556e;
+}
 .cards-1 .card-image.yellow {
 	background-color: #f8f1de;
 }
