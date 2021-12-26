@@ -200,42 +200,40 @@
     	if (event.isDefaultPrevented()) {
             // handle the invalid form...
             pformError();
-            psubmitMSG(false, "Please fill all fields!");
+            psubmitMSG(false, "Παρακαλώ συμπληρώστε ολα τα πεδία!");
         } else {
-            alert('hello')
             // everything looks good!
             event.preventDefault();
-            //psubmitForm();
+            sendEmail();
         }
     });
 
-    function psubmitForm() {
-        // initiate variables with form content
-		var name = $("#pname").val();
+    function sendEmail() {
+        var name = $("#pname").val();
 		var email = $("#pemail").val();
         var select = $("#pselect").val();
-        var terms = $("#pterms").val();
-        
-        $.ajax({ 
-            type: "POST",
-            url: "php/privacyform-process.php",
-            data: "name=" + name + "&email=" + email + "&select=" + select + "&terms=" + terms, 
-            success: function(text) {
-                if (text == "success") {
-                    pformSuccess();
-                } else {
-                    pformError();
-                    psubmitMSG(false, text);
-                }
-            }
-        });
-	}
+        var text = $("#maintext").val();
 
-    function pformSuccess() {
-        $("#privacyForm")[0].reset();
-        psubmitMSG(true, "Request Submitted!");
-        $("input").removeClass('notEmpty'); // resets the field label after submission
-    }
+        Email.send({
+
+          Host: "smtp.gmail.com",
+          Username: "savvas954.mail@gmail.com",
+          Password: "12345!SAVvas",
+          To: 'savvas_kzn@hotmail.com',
+          From: "savvas954.mail@gmail.com",
+          Subject: "O χρηστης: "+name+" με email: "+email+" ρωταει για θέμα: "+select,
+          Body: text,
+        })
+          .then(function (message) {
+            document.getElementById("closebutton").click();
+            Swal.fire(
+                'Επιτυχία!',
+                'Το μηνυμα στάλθηκε !',
+                'success'
+              );
+            //alert("mail sent successfully");
+          });
+      }
 
     function pformError() {
         $("#privacyForm").removeClass().addClass('shake animated').one('webkitAnimationEnd mozAnimationEnd MSAnimationEnd oanimationend animationend', function() {

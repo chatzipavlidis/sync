@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Sync is a landing page HTML template built with Bootstrap 4 for presenting mobile apps to the online audience and for getting visitors to become users.">
+    <meta name="description" content="">
     <meta name="author" content="savvas chatzipavlidis">
 
     <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
@@ -18,8 +18,9 @@
 	<meta property="og:type" content="article" />
 
     <!-- Webpage Title -->
-    <title>Savvas-Sync</title>
-    
+    <title>Savvas-Develops</title>
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <!-- Styles -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
     <link href="css/bootstrap.css" rel="stylesheet">
@@ -94,7 +95,8 @@
                             Ξεκινήστε να εστιάζετε στους στόχους σας και να κάνετε περισσότερα
                             πράγματα με τις Web εφαρμογές. Παρέχουμε τη δύναμη των 
                             κοινωνικών συνδέσεων για να σας βοηθήσει να παραμείνετε εντός νέων τεχνολογιών
-                            και να οργανωθείτε πάνω σε αυτό
+                            και να οργανωθείτε πάνω σε αυτό. Στην παρακάτω φόρμα μπορείτε να μας στείλετε ερωτήσεις και θα χαρούμε
+                            να έρθουμε σε επικοινωνία μαζι σας
                             </p>
                             <a class="btn-solid-reg popup-with-move-anim" href="#description-1-details-lightbox"> ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</a>
                     </div> <!-- end of text-container -->
@@ -243,19 +245,18 @@
     <!-- Description 1 Details Lightbox -->
 	<!-- Details Lightbox -->
 	<div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog mfp-hide">
-        <h2 class="pb-4">ΕΠΙΚΟΙΝΩΝΙΑ</h2>
+        <h2 class="pb-4">ΦΟΡΜΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</h2>
         <div class="row">
-            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
-			<div class="col-lg-6">
+            <button title="Close (Esc)" type="button" id="closebutton" class="mfp-close x-button">×</button>
+			<div class="col-lg-6"> 
                 <div class="image-container">
-                    <img class="img-fluid" src="images/description-1-details-lightbox.jpg" alt="alternative">
+                    <img class="img-fluid" style="opacity: 75%;" src="images/contact.jpg" alt="alternative">
                 </div> <!-- end of image-container -->
 			</div>
             <div class="col-lg-6">
                 <!-- Privacy Form -->
             <div class="form-container ml-4 my-auto">
-                <form id="privacyForm2" data-netlify-recaptcha="true" name="contactForm" method="POST" data-netlify="true" action="/" data-toggle="validator" data-focus="false">
-                    <input type="hidden" name="form-name" value="contactForm">
+                <form id="privacyForm" data-netlify-recaptcha="true" name="contactForm" method="POST"  data-toggle="validator" data-focus="false">
                     <div class="form-group">
                         <input type="text" name="form-name" class="form-control-input" id="pname" required>
                         <label class="label-control" for="pname">Ονομα</label>
@@ -275,12 +276,12 @@
                         <div class="help-block with-errors"></div>
                     </div>
                     <div class="form-group checkbox p-small">
-                        <textarea style="width: 100%;" name="form-msg" id=""  rows="5"></textarea>
+                        <textarea style="width: 100%;" name="form-msg" id="maintext"  rows="5" required></textarea>
                         <div class="help-block with-errors"></div>
                     </div>
                     <div data-netlify-recaptcha="true"></div>
                     <div class="form-group">
-                        <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                        <button type="submit" class="form-control-submit-button">ΑΠΟΣΤΟΛΗ</button>
                     </div>
                     <div class="form-message">
                         <div id="pmsgSubmit" class="h3 text-center hidden"></div>
@@ -690,8 +691,13 @@
                         <h5>Βοηθήματα</h5>
                         <ul class="list-unstyled li-space-lg p-small">
                             <li>
+                                <i class="fab fa-linkedin-in"></i>
+                                <a class="ml-2" href="www.linkedin.com/in/savvas-chatzipavlidis-8b49651b9">LinkedIn</a>
+                            </li>
+                        
+                            <li>
                                 <i class="fab fa-github"></i>
-                                <a class="ml-2" href="#your-link">Github</a>
+                                <a class="ml-2" href="https://github.com/chatzipavlidis">Github</a>
                             </li>
                             <li>
                                 <i class="fas fa-graduation-cap"></i>
@@ -712,12 +718,7 @@
                                 <i class="fab fa-twitter fa-stack-1x"></i>
                             </a>
                         </span>
-                        <span class="fa-stack">
-                            <a href="#your-link">
-                                <i class="fas fa-circle fa-stack-2x"></i>
-                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
-                            </a>
-                        </span>
+                        
                         <span class="fa-stack">
                             <a href="#your-link">
                                 <i class="fas fa-circle fa-stack-2x"></i>
