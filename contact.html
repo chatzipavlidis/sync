@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="el">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- SEO Meta Tags -->
+    <meta name="description" content="Sync is a landing page HTML template built with Bootstrap 4 for presenting mobile apps to the online audience and for getting visitors to become users.">
+    <meta name="author" content="savvas chatzipavlidis">
+
+    <!-- OG Meta Tags to improve the way the post looks when you share the page on LinkedIn, Facebook, Google+ -->
+	<meta property="og:site_name" content="" /> <!-- website name -->
+	<meta property="og:site" content="" /> <!-- website link -->
+	<meta property="og:title" content=""/> <!-- title shown in the actual shared post -->
+	<meta property="og:description" content="" /> <!-- description shown in the actual shared post -->
+	<meta property="og:image" content="" /> <!-- image link, make sure it's jpg -->
+	<meta property="og:url" content="" /> <!-- where do you want your post to link to -->
+	<meta property="og:type" content="article" />
+
+    <!-- Webpage Title -->
+    <title>Savvas-Sync</title>
+    
+    <!-- Styles -->
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700&display=swap&subset=latin-ext" rel="stylesheet">
+    <link href="css/bootstrap.css" rel="stylesheet">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
+    <link href="css/swiper.css" rel="stylesheet">
+	<link href="css/magnific-popup.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	
+	<!-- Favicon  -->
+    <link rel="icon" href="images/favicon2.png">
+</head>
+<body data-spy="scroll" data-target=".fixed-top">
+    
+    <!-- Preloader -->
+	<div class="spinner-wrapper">
+        <div class="spinner">
+            <div class="bounce1"></div>
+            <div class="bounce2"></div>
+            <div class="bounce3"></div>
+        </div>
+    </div>
+    <!-- end of preloader -->
+    
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark navbar-custom fixed-top">
+        <div class="container">
+            <!-- Text Logo - Use this if you don't have a graphic logo -->
+            <!-- <a class="navbar-brand logo-text page-scroll" href="index.html">Sync</a> -->
+
+            <!-- Image Logo -->
+            <a id="navbar-logo-home" class="navbar-brand logo-image" href="index.html"><img src="images/logo2.svg" alt="alternative">AΡΧΙΚΗ</a> 
+            
+            <!-- Mobile Menu Toggle Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-awesome fas fa-bars"></span>
+                <span class="navbar-toggler-awesome fas fa-times"></span>
+            </button>
+            <!-- end of mobile menu toggle button -->
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#description">ΠΕΡΙΓΡΑΦΗ <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#features">ΛΕΙΤΟΥΡΓΕΙΕΣ</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link page-scroll" href="#screens">ΕΙΚΟΝΕΣ</a>
+                    </li>
+
+                    
+                </ul>
+                <span class="nav-item">
+                    <a class="btn-outline-sm page-scroll" href="#contact">ΣΤΟΙΧΕΙΑ ΕΠΙΚΟΙΝΩΝΙΑΣ</a>
+                </span>
+            </div>
+        </div> <!-- end of container -->
+    </nav> <!-- end of navbar -->
+    <!-- end of navigation -->
+
+
+
+    
+    <!-- Description 1 Details Lightbox -->
+	<!-- Details Lightbox -->
+	<div id="description-1-details-lightbox" class="lightbox-basic zoom-anim-dialog">
+        <h2 class="pb-4">ΕΠΙΚΟΙΝΩΝΙΑ</h2>
+        <div class="row">
+            <button title="Close (Esc)" type="button" class="mfp-close x-button">×</button>
+			<div class="col-lg-6">
+                <div class="image-container">
+                    <img class="img-fluid" src="images/description-1-details-lightbox.jpg" alt="alternative">
+                </div> <!-- end of image-container -->
+			</div>
+            <div class="col-lg-6">
+                <!-- Privacy Form -->
+            <div class="form-container ml-4 my-auto">
+                <form id="privacyForm2" data-netlify-recaptcha="true" name="contactForm" method="POST" data-netlify="true" onsubmit="submit" data-toggle="validator" data-focus="false">
+                    <div class="form-group">
+                        <input type="text" name="form-name" class="form-control-input" id="pname" required>
+                        <label class="label-control" for="pname">Ονομα</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="form-mail" class="form-control-input" id="pemail" required>
+                        <label class="label-control" for="pemail">Email</label>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group">
+                        <select class="form-control-select" name="form-selection" id="pselect" required>
+                            <option class="select-option" value="" disabled selected>Επέλεξε θέμα</option>
+                            <option class="select-option" value="Ενημέρωση τιμών">Ενημέρωση τιμών</option>
+                            <option class="select-option" value="Δείξτε μου τα προϊοντα">Δείξτε μου τα προϊοντα</option>
+                        </select>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div class="form-group checkbox p-small">
+                        <textarea style="width: 100%;" name="form-msg" id=""  rows="5"></textarea>
+                        <div class="help-block with-errors"></div>
+                    </div>
+                    <div data-netlify-recaptcha="true"></div>
+                    <div class="form-group">
+                        <button type="submit" class="form-control-submit-button">SUBMIT</button>
+                    </div>
+                    <div class="form-message">
+                        <div id="pmsgSubmit" class="h3 text-center hidden"></div>
+                    </div>
+                </form>
+            </div> <!-- end of form container -->
+            <!-- end of privacy form -->
+            </div>
+			
+		</div> <!-- end of row -->
+    </div> <!-- end of lightbox-basic -->
+    <!-- end of details lightbox -->
+    <!-- end of description 1 details lightbox -->
+
+
+    <!-- Footer -->
+    <div class="footer" id="contact">
+        
+        <div class="container">
+            <h3 style="text-align: center;margin-bottom: 5%;color: #999;">ΕΠΙΚΟΙΝΩΝΙΑ</h3>
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="footer-col first">
+                        <h5>Σχετικά με τη σελιδα</h5>
+                        <p class="p-small">Αυτή η σελίδα είναι μια βασική HTML που περιέχει Bootstrap 4 η οποία προσφέρει ακομα και την παρουσίαση εφαρμογών για κινητά</p>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col second">
+                        <h5>Στοιχεία επικοινωνίας</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li class="media">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div class="media-body">Κοζάνη, Ελλάδα</div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-envelope"></i>
+                                <div class="media-body"><a href="mailto:savvas_kzn@hotmail.com">savvas_kzn@hotmail.com</a></div>
+                            </li>
+                            <li class="media">
+                                <i class="fas fa-phone-alt"></i>
+                                <div class="media-body"><a href="tel:+306949987858">+30 6949987858</a></div>
+                            </li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col third">
+                        <h5>Χρησιμα site</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li>
+                                <i class="fas fa-cloud-sun"></i>
+                                <a class="ml-2" href="https://www.meteo.gr/">  Καιρός</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-calendar-day"></i>
+                                <a class="ml-2" href="https://www.eortologio.net/"> Εορτολόγιο</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-broadcast-tower"></i>
+                                <a class="ml-2" href="https://www.e-radio.gr/">  E-radio</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col fourth">
+                        <h5>Βοηθήματα</h5>
+                        <ul class="list-unstyled li-space-lg p-small">
+                            <li>
+                                <i class="fab fa-github"></i>
+                                <a class="ml-2" href="#your-link">Github</a>
+                            </li>
+                            <li>
+                                <i class="fas fa-graduation-cap"></i>
+                                <a class="ml-2" href="https://www.w3schools.com/">E-School</a>
+                            </li>
+                        </ul>
+                    </div> <!-- end of footer-col -->
+                    <div class="footer-col fifth">
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-facebook-f fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-twitter fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-linkedin-in fa-stack-1x"></i>
+                            </a>
+                        </span>
+                        <span class="fa-stack">
+                            <a href="#your-link">
+                                <i class="fas fa-circle fa-stack-2x"></i>
+                                <i class="fab fa-instagram fa-stack-1x"></i>
+                            </a>
+                        </span>
+                    </div> <!-- end of footer-col -->
+                </div> <!-- end of col -->
+            </div> <!-- end of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of footer -->  
+    <!-- end of footer -->
+
+
+    <!-- Copyright -->
+    <div class="copyright">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <p class="p-small">Πνευματική ιδιοκτησία © 2022 <a href="#">Savvas Chatzipavlidis</a> - Ολα τα δικαιώματα προστατεύονται</p>
+                </div> <!-- end of col -->
+            </div> <!-- enf of row -->
+        </div> <!-- end of container -->
+    </div> <!-- end of copyright --> 
+    <!-- end of copyright -->
+    
+    	
+    <!-- Scripts -->
+    <script src="js/jquery.min.js"></script> <!-- jQuery for Bootstrap's JavaScript plugins -->
+    <script src="js/popper.min.js"></script> <!-- Popper tooltip library for Bootstrap -->
+    <script src="js/bootstrap.min.js"></script> <!-- Bootstrap framework -->
+    <script src="js/jquery.easing.min.js"></script> <!-- jQuery Easing for smooth scrolling between anchors -->
+    <script src="js/swiper.min.js"></script> <!-- Swiper for image and text sliders -->
+    <script src="js/jquery.magnific-popup.js"></script> <!-- Magnific Popup for lightboxes -->
+    <script src="js/validator.min.js"></script> <!-- Validator.js - Bootstrap plugin that validates forms -->
+    <script src="js/scripts.js"></script> <!-- Custom scripts -->
+</body>
+</html>
