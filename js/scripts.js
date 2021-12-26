@@ -231,6 +231,7 @@
                 'Το μηνυμα στάλθηκε !',
                 'success'
               );
+              $("#privacyForm").trigger("reset");
             //alert("mail sent successfully");
           });
       }
